@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talks — Kyo Muranaka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg:#ffffff; --text:#111111; --muted:#999999; --faint:#f5f5f5; --line:#e8e8e8; --sans:'Lato','Noto Sans JP',sans-serif; }
+  body { background:var(--bg); color:var(--text); font-family:var(--sans); font-weight:300; min-height:100vh; display:flex; flex-direction:column; -webkit-font-smoothing:antialiased; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:1.4rem 2.4rem; border-bottom:1px solid var(--line); }
+  .nav-name { font-size:17px; font-weight:400; letter-spacing:.04em; color:var(--text); text-decoration:none; }
+  .nav-links { display:flex; gap:1.8rem; }
+  .nav-links a { font-size:13px; color:var(--muted); text-decoration:none; letter-spacing:.04em; transition:color .2s; }
+  .nav-links a:hover, .nav-links a.active { color:var(--text); }
+  main { flex:1; max-width:680px; margin:0 auto; padding:4rem 2rem 5rem; width:100%; }
+  .page-label { font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-bottom:3rem; }
+  .year-group { margin-bottom:3rem; }
+  .year { font-size:12px; letter-spacing:.12em; color:var(--muted); margin-bottom:1.2rem; padding-bottom:.6rem; border-bottom:1px solid var(--line); }
+  .talk { display:grid; grid-template-columns:1fr auto; gap:1rem; align-items:start; padding:.9rem 0; border-bottom:1px solid var(--line); }
+  .talk:last-child { border-bottom:none; }
+  .talk-event { font-size:12px; letter-spacing:.06em; color:var(--muted); margin-bottom:.3rem; }
+  .talk-title { font-size:15px; font-weight:400; color:var(--text); line-height:1.6; }
+  .talk-title a { color:inherit; text-decoration:none; border-bottom:1px solid var(--line); transition:border-color .2s; }
+  .talk-title a:hover { border-color:#999; }
+  .talk-sub { font-size:13px; color:var(--muted); margin-top:.3rem; }
+  .badge { font-size:11px; padding:3px 9px; letter-spacing:.06em; white-space:nowrap; margin-top:2px; border:1px solid var(--line); color:var(--muted); }
+  .b-panel  { border-color:#bbb; color:#666; }
+  .b-media  { border-color:#bbb; color:#666; }
+  .b-lecture{ border-color:#111; color:#111; }
+  footer { padding:1.2rem 2.4rem; border-top:1px solid var(--line); text-align:center; font-size:11px; color:var(--muted); letter-spacing:.04em; }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+  main { animation:fadeIn .5s ease both; }
+  @media(max-width:520px){ nav{padding:1.2rem 1.2rem} main{padding:3rem 1.2rem 4rem} .badge{display:none} }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-name">Kyo Muranaka</a>
+  <div class="nav-links">
+    <a href="index.html">About</a>
+    <a href="talks.html" class="active">Talks</a>
+  </div>
+</nav>
+
+<main>
+  <p class="page-label">Talks &amp; Media</p>
+
+  <div class="year-group">
+    <div class="year">2026</div>
+    <div class="talk">
+      <div>
+        <div class="talk-event">LabBase R&amp;D / HR Forum 2026</div>
+        <div class="talk-title"><a href="https://business.labbase.jp/labbase-rd-hr-forum-202603/" target="_blank">イノベーションを加速させる博士人材の魅力と活躍できる環境とは？</a></div>
+        <div class="talk-sub">富士通・ソフトバンク・旭化成・一橋大と共同登壇</div>
+      </div>
+      <span class="badge b-panel">パネル</span>
+    </div>
+  </div>
+
+  <div class="year-group">
+    <div class="year">2025</div>
+    <div class="talk">
+      <div>
+        <div class="talk-event">アカリク × 芝浦工業大学 博士人材キャリアビジョンセミナー</div>
+        <div class="talk-title"><a href="https://note.com/acaric/n/n25ac6e534275" target="_blank">産業界ゲストとしてパネル登壇</a></div>
+        <div class="talk-sub">2025.11</div>
+      </div>
+      <span class="badge b-panel">パネル</span>
+    </div>
+    <div class="talk">
+      <div>
+        <div class="talk-event">新経済連盟 JX DRIVE! — 会員限定セミナー</div>
+        <div class="talk-title"><a href="https://jane.or.jp/event/member/25723.html" target="_blank">博士人材が拓く、イノベーションの未来</a></div>
+        <div class="talk-sub">経済産業省・文部科学省局長クラスと共同登壇 · 2025.10</div>
+      </div>
+      <span class="badge b-lecture">講演</span>
+    </div>
+    <div class="talk">
+      <div>
+        <div class="talk-event">日本経済新聞「飛躍なるか民間博士」特集</div>
+        <div class="talk-title">「学会は博士人材の採用競う場」— 世界で争奪戦</div>
+        <div class="talk-sub">取材・掲載 · 2025.09</div>
+      </div>
+      <span class="badge b-media">メディア</span>
+    </div>
+    <div class="talk">
+      <div>
+        <div class="talk-event">SIAI 産学クロススクエア「ミライをつくるAI人材」第4回 @Tokyo</div>
+        <div class="talk-title"><a href="https://siai.jp/archive/4th/program/lecture" target="_blank">講演・パネルディスカッション</a></div>
+      </div>
+      <span class="badge b-panel">パネル</span>
+    </div>
+  </div>
+</main>
+
+<footer>© Kyo Muranaka</footer>
+</body>
+</html>

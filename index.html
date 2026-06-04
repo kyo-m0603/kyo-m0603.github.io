@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kyo Muranaka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --bg:#ffffff; --text:#111111; --muted:#999999; --faint:#f5f5f5; --line:#e8e8e8; --sans:'Lato','Noto Sans JP',sans-serif; }
+  body { background:var(--bg); color:var(--text); font-family:var(--sans); font-weight:300; min-height:100vh; display:flex; flex-direction:column; -webkit-font-smoothing:antialiased; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding:1.4rem 2.4rem; border-bottom:1px solid var(--line); }
+  .nav-name { display:none; }
+  .nav-links { display:flex; gap:1.8rem; }
+  .nav-links a { font-size:13px; color:var(--muted); text-decoration:none; letter-spacing:.04em; transition:color .2s; }
+  .nav-links a:hover, .nav-links a.active { color:var(--text); }
+  main { flex:1; max-width:680px; margin:0 auto; padding:4rem 2rem 5rem; width:100%; }
+  .page-label { font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-bottom:3rem; }
+  .section { margin-bottom:3rem; padding-bottom:3rem; border-bottom:1px solid var(--line); }
+  .section:last-child { border-bottom:none; margin-bottom:0; }
+  .section-label { font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:#444; margin-bottom:1.6rem; font-weight:700; }
+  .section-body { font-size:14px; line-height:1.9; color:#333; }
+  .topics { display:flex; flex-wrap:wrap; gap:.5rem; }
+  .topic { font-size:13px; letter-spacing:.05em; color:var(--muted); padding:5px 12px; border:1px solid var(--line); transition:border-color .2s, color .2s; cursor:default; }
+  .topic:hover { border-color:#aaa; color:var(--text); }
+  .plain-list { list-style:none; }
+  .plain-list li { font-size:14px; color:#222; line-height:1.8; padding:.35rem 0; border-bottom:1px solid var(--line); display:flex; justify-content:space-between; align-items:baseline; gap:1rem; }
+  .plain-list li:last-child { border-bottom:none; }
+  .list-note { font-size:13px; color:var(--muted); white-space:nowrap; }
+  .list-note a { color:var(--muted); text-decoration:none; border-bottom:1px solid var(--line); transition:color .2s; }
+  .list-note a:hover { color:var(--text); }
+  .ext-link { color:#222; text-decoration:none; border-bottom:1px solid var(--line); transition:color .2s; }
+  .ext-link:hover { color:var(--text); }
+  footer { padding:1.2rem 2.4rem; border-top:1px solid var(--line); text-align:center; font-size:11px; color:var(--muted); letter-spacing:.04em; }
+  .name-block { display:flex; align-items:center; gap:1.6rem; margin-bottom:3rem; }
+  .name-photo { width:72px; height:96px; overflow:hidden; flex-shrink:0; }
+  .name-photo img { width:100%; height:100%; object-fit:cover; object-position:center top; filter:grayscale(100%) contrast(1.05) brightness(1.02); display:block; }
+  @media(max-width:520px){ .name-photo{width:60px;height:60px;} }
+  main { animation:fadeIn .5s ease both; }
+  @media(max-width:520px){ nav{padding:1.2rem 1.2rem} main{padding:3rem 1.2rem 4rem} }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-name">Kyo Muranaka</a>
+  <div class="nav-links">
+    <a href="index.html" class="active">About</a>
+    <a href="talks.html">Talks</a>
+  </div>
+</nav>
+
+<main>
+  <div class="name-block">
+    <div class="name-photo">
+      <img src="photo.png" alt="Kyo Muranaka">
+    </div>
+    <h1 style="font-size:26px;font-weight:700;letter-spacing:.04em;color:var(--text);">Kyo Muranaka</h1>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Background</div>
+    <div class="section-body">
+      <p>広島大学大学院 生物圏科学研究科 修士課程修了。アストラゼネカ株式会社でのMR職を経て、2018年よりサイバーエージェントに入社。入社以来、研究者採用・制度設計・文部科学省との連携を通じ、研究組織の構築と運営に一貫して携わっている。</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Interest Topics</div>
+    <div class="topics">
+      <span class="topic">Research Talent Acquisition</span>
+      <span class="topic">Research Organization Design</span>
+      <span class="topic">Research Organization Management</span>
+      <span class="topic">Research Organization Utilization</span>
+      <span class="topic">Industry-Academia Collaboration</span>
+      <span class="topic">PhD Talent in Industry</span>
+      <span class="topic">R&amp;D-Driven Competitiveness</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Research Labs</div>
+    <ul class="plain-list">
+      <li>CyberAgent AI Lab <span class="list-note"><a href="https://cyberagent.ai/ailab/" target="_blank">cyberagent.ai/ailab</a></span></li>
+      <li>Sports AI Tech Lab <span class="list-note"><a href="https://www.cyberagent.co.jp/news/detail/id=32752" target="_blank">プレスリリース</a></span></li>
+      <li>Game AI Lab <span class="list-note"><a href="https://www.cyberagent.co.jp/news/detail/id=29393" target="_blank">プレスリリース</a></span></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Advisory</div>
+    <ul class="plain-list">
+      <li>
+        Research Recruitment Advisor — <a href="https://third-intelligence.com/" target="_blank" class="ext-link">Third Intelligence, Inc.</a>
+        <span class="list-note">AGI research &amp; products</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-label">Links</div>
+    <ul class="plain-list">
+      <li>X <span class="list-note"><a href="https://x.com/mython__" target="_blank">@mython__</a></span></li>
+      <li>LinkedIn <span class="list-note"><a href="https://www.linkedin.com/in/kyo-muranaka-92315a174/" target="_blank">kyo-muranaka</a></span></li>
+      <li>Contact <span class="list-note"><a href="#" id="contact-trigger">お問い合わせ</a></span></li>
+    </ul>
+  </div>
+</main>
+
+<footer>© Kyo Muranaka</footer>
+
+<div id="overlay" style="position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.2);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;pointer-events:none;transition:opacity .2s;">
+  <div id="modal" style="background:#fff;border:1px solid var(--line);width:100%;max-width:400px;padding:2rem;transform:translateY(10px);transition:transform .25s ease;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.6rem;">
+      <span style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);">Contact</span>
+      <button id="modal-close" style="background:none;border:1px solid var(--line);cursor:pointer;color:var(--muted);font-size:11px;padding:3px 10px;font-family:var(--sans);">close</button>
+    </div>
+    <form id="contact-form" action="https://formspree.io/f/xaqaqbkb" method="POST">
+      <div style="margin-bottom:.9rem;"><label style="display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem;">Name</label><input type="text" name="name" required placeholder="お名前" style="width:100%;background:var(--faint);border:1px solid var(--line);color:var(--text);font-family:var(--sans);font-size:14px;font-weight:300;padding:.6rem .9rem;outline:none;" onfocus="this.style.borderColor='#aaa'" onblur="this.style.borderColor='#e8e8e8'"></div>
+      <div style="margin-bottom:.9rem;"><label style="display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem;">Email</label><input type="email" name="email" required placeholder="メールアドレス" style="width:100%;background:var(--faint);border:1px solid var(--line);color:var(--text);font-family:var(--sans);font-size:14px;font-weight:300;padding:.6rem .9rem;outline:none;" onfocus="this.style.borderColor='#aaa'" onblur="this.style.borderColor='#e8e8e8'"></div>
+      <div style="margin-bottom:1rem;"><label style="display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.4rem;">Message</label><textarea name="message" required placeholder="メッセージ" style="width:100%;background:var(--faint);border:1px solid var(--line);color:var(--text);font-family:var(--sans);font-size:14px;font-weight:300;padding:.6rem .9rem;outline:none;height:96px;resize:none;" onfocus="this.style.borderColor='#aaa'" onblur="this.style.borderColor='#e8e8e8'"></textarea></div>
+      <button type="submit" style="width:100%;padding:.7rem;background:var(--text);border:none;color:#fff;font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;">Send</button>
+    </form>
+    <div id="form-success" style="display:none;text-align:center;padding:1.2rem 0;"><p style="font-size:13px;color:var(--muted);line-height:1.8;">送信しました。<br>数日以内にご連絡します。</p></div>
+  </div>
+</div>
+
+<script>
+  const trigger=document.getElementById('contact-trigger'),overlay=document.getElementById('overlay'),modal=document.getElementById('modal'),closeBtn=document.getElementById('modal-close'),form=document.getElementById('contact-form'),success=document.getElementById('form-success');
+  const open=()=>{overlay.style.opacity='1';overlay.style.pointerEvents='all';modal.style.transform='translateY(0)';};
+  const close=()=>{overlay.style.opacity='0';overlay.style.pointerEvents='none';modal.style.transform='translateY(10px)';};
+  trigger.addEventListener('click',e=>{e.preventDefault();open();});
+  closeBtn.addEventListener('click',close);
+  overlay.addEventListener('click',e=>{if(e.target===overlay)close();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+  form.addEventListener('submit',async e=>{e.preventDefault();const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});if(res.ok){form.style.display='none';success.style.display='block';}});
+</script>
+</body>
+</html>
